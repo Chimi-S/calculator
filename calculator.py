@@ -29,7 +29,7 @@ operations = {
 def calculator():
     print(logo)
 
-    num1 = int(input("What's your first number: "))
+    num1 = float(input("What's your first number: "))
     for operation in operations:
         print(operation)
 
@@ -38,7 +38,7 @@ def calculator():
     while continue_calculation:
 
         operation_choice = input("Pick an operation from the line above: ")
-        num2 = int(input("What's your second number: "))
+        num2 = float(input("What's your second number: "))
 
         calculation_function = operations[operation_choice]
         answer = calculation_function(num1, num2)
